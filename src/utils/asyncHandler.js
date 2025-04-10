@@ -1,10 +1,14 @@
+// src/utils/asyncHandler.js
+
 const asyncHandler = (requestHandler) => {
-    return (req, res, next) => {
-        Promise.resolve(requestHandler(req, res, next)).catch(next);
-    };
+  return (req, res, next) => {
+    Promise.resolve(requestHandler(req, res, next)).catch(next);
+  };
 };
 
-    export {asyncHnadler}
+export { asyncHandler };
+
+  
 
     // const asyncHnadler = () =>{}
     // const asyncHnadler = (func) => {}
