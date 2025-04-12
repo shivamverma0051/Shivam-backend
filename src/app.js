@@ -21,6 +21,7 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 // Routes
-app.use("/api/v1/users", userRouter); // Example: http://localhost:8000/api/v1/users/login
+app.use("/api/v1/users", userRouter);
+// Example: http://localhost:8000/api/v1/users/login
 
 export { app };
